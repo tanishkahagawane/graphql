@@ -1,6 +1,6 @@
-## 1. GraphQL Fundamentals
+# 1. GraphQL Fundamentals
 
-1\. What is GraphQL?
+## 1. What is GraphQL?
 
 GraphQL is an open-source query language for APIs and a runtime developed by Facebook (now Meta). It allows clients to request exactly the data they need from a server, avoiding unnecessary data transfer.
 
@@ -32,7 +32,7 @@ In short: GraphQL helps clients fetch the exact data they need through a flexibl
 
 ---
 
-2\. What are the main advantages of GraphQL over REST API?
+## 2. What are the main advantages of GraphQL over REST API?
 
 GraphQL offers several advantages over REST APIs, mainly in terms of data fetching flexibility, performance, and developer experience.
 
@@ -75,7 +75,7 @@ In short: GraphQL provides more flexible data fetching, can reduce network reque
 
 ---
 
-3\. What is the difference between GraphQL and REST API?
+## 3. What is the difference between GraphQL and REST API?
 
 GraphQL and REST are two approaches used to design APIs. The main difference is that REST uses multiple endpoints to access resources, whereas GraphQL typically uses a single endpoint and allows clients to request exactly the data they need.
 
@@ -127,11 +127,11 @@ GraphQL returns only the requested fields, while REST returns the response struc
 - GraphQL: Best when clients need flexible data fetching, related data from multiple resources, or different response fields for different screens.
 - REST: Best for straightforward resource-based APIs, standard HTTP caching, and applications where fixed response structures are sufficient.
 
-## Interview conclusion: GraphQL provides flexible data fetching through a query language and a strongly typed schema, while REST organizes APIs around resources and HTTP methods. GraphQL can reduce unnecessary data transfer and multiple requests, but it also introduces complexity in caching, authorization, and query performance management. Neither approach is universally better; the choice depends on the application's requirements.
+Interview conclusion: GraphQL provides flexible data fetching through a query language and a strongly typed schema, while REST organizes APIs around resources and HTTP methods. GraphQL can reduce unnecessary data transfer and multiple requests, but it also introduces complexity in caching, authorization, and query performance management. Neither approach is universally better; the choice depends on the application's requirements.
 
 ---
 
-4\. What are the core components of GraphQL?
+## 4. What are the core components of GraphQL?
 
 The core components of GraphQL are Schema, Types, Queries, Mutations, Resolvers, and Subscriptions. These components work together to define the data an API exposes and how clients can access or modify it.
 
@@ -226,7 +226,7 @@ The core components of GraphQL are schemas, types, queries, mutations, resolvers
 
 ---
 
-5\. What is a GraphQL Schema?
+## 5. What is a GraphQL Schema?
 
 A GraphQL schema defines the structure of a GraphQL API. It specifies what data is available, the data types, and which operations clients can perform, such as fetching, creating, updating, or deleting data.
 
@@ -266,11 +266,11 @@ type Mutation {
 3. Validates incoming GraphQL operations against the API structure.
 4. Helps clients discover available fields through introspection.
 
-## Interview conclusion: A GraphQL schema is a strongly typed definition of an API that describes the available data, its structure, and supported operations. It enables validation of client requests and provides a clear contract between the client and server.
+Interview conclusion: A GraphQL schema is a strongly typed definition of an API that describes the available data, its structure, and supported operations. It enables validation of client requests and provides a clear contract between the client and server.
 
 ---
 
-6\. What is a Type System in GraphQL?
+## 6. What is a Type System in GraphQL?
 
 The type system in GraphQL defines the structure and types of data that can be requested or returned by an API. It ensures that the API follows a clearly defined schema and helps validate queries before they are executed.
 
@@ -355,9 +355,7 @@ Interview conclusion: The GraphQL type system defines the data types, fields, an
 
 ---
 
-7. What are Queries, Mutations, and Subscriptions?
-
-7\. What are Queries, Mutations, and Subscriptions in GraphQL?
+## 7. What are Queries, Mutations, and Subscriptions?
 
 In GraphQL, Queries, Mutations, and Subscriptions are the three main operation types used to interact with the server.
 
@@ -432,9 +430,7 @@ Queries, Mutations, and Subscriptions are the three main operation types in Grap
 
 ---
 
-8. What is a resolver in GraphQL?
-
-8\. What is a Resolver in GraphQL?
+## 8. What is a resolver in GraphQL?
 
 A resolver in GraphQL is a function responsible for fetching or providing the data for a specific field defined in the GraphQL schema. It connects the schema to the actual data sources, such as databases, REST APIs, or other services.
 
@@ -506,7 +502,7 @@ Interview conclusion: A resolver is a function that provides the data for a Grap
 
 ---
 
-9\. What is the difference between a Query and a Mutation in GraphQL?
+## 9. What is the difference between a Query and a Mutation in GraphQL?
 
 In GraphQL, a Query is used to fetch or read data, whereas a Mutation is used to modify data on the server, such as creating, updating, or deleting records.
 
@@ -556,7 +552,7 @@ Interview conclusion: The main difference is that Queries are used to retrieve d
 
 ---
 
-10\. What is the role of the GraphQL Server?
+## 10. What is the role of the GraphQL Server?
 
 A GraphQL server is responsible for receiving GraphQL requests from clients, validating them against the GraphQL schema, executing the requested operations using resolvers, and returning the results in JSON format.
 
@@ -624,9 +620,9 @@ The GraphQL server receives client requests, validates them against the schema, 
 
 ---
 
-## 2. GraphQL Queries and Types
+# 2. GraphQL Queries and Types
 
-11\. What are Scalar Types in GraphQL?
+## 11. What are Scalar Types in GraphQL?
 
 Scalar types in GraphQL are the basic data types that represent a single value, such as text, numbers, or Boolean values. They are used to define the fields in a GraphQL schema.
 
@@ -688,7 +684,7 @@ Scalar types are the basic building blocks of a GraphQL schema. GraphQL provides
 
 ---
 
-12\. What are Object Types in GraphQL?
+## 12. What are Object Types in GraphQL?
 
 Object types in GraphQL define the structure of an entity by specifying its fields and the types of data those fields return. They are used to represent real-world entities such as users, products, orders, and employees.
 
@@ -761,7 +757,7 @@ Interview conclusion: An object type in GraphQL defines the structure of an enti
 
 ---
 
-13\. What are Enums in GraphQL?
+## 13. What are Enums in GraphQL?
 
 Enums, or enumerations, are a special type in GraphQL that define a fixed set of allowed values for a field or argument. They ensure that only predefined values can be used, helping maintain data consistency and prevent invalid inputs.
 
@@ -822,7 +818,7 @@ Interview conclusion: Enums in GraphQL define a fixed set of allowed values for 
 
 ---
 
-14\. What are Input Types in GraphQL, and why are they used?
+## 14. What are Input Types in GraphQL, and why are they used?
 
 Input types in GraphQL are special types defined using the `input` keyword. They allow us to group multiple input fields into a single object and pass that object as an argument to a query or mutation.
 
@@ -909,7 +905,7 @@ Interview conclusion: Input types in GraphQL are defined using the `input` keywo
 
 ---
 
-15\. What is the difference between `type` and `input` in GraphQL?
+## 15. What is the difference between `type` and `input` in GraphQL?
 
 In GraphQL, `type` and `input` are used to define the structure of data, but they serve different purposes.
 
@@ -984,7 +980,7 @@ The main difference is that `type` is used to define output objects that the ser
 
 ---
 
-16\. What is the difference between `String` and `String!` in GraphQL?
+## 16. What is the difference between `String` and `String!` in GraphQL?
 
 In GraphQL, `String` and `String!` are scalar types used to represent text, but the main difference is whether the field is allowed to return `null`.
 
@@ -1044,7 +1040,7 @@ Interview conclusion: `String` is a nullable string type, whereas `String!` is a
 
 ---
 
-17\. What is the difference between `[User]`, `[User!]`, and `[User!]!` in GraphQL?
+## 17. What is the difference between `[User]`, `[User!]`, and `[User!]!` in GraphQL?
 
 In GraphQL, square brackets `[]` indicate a list type, and the exclamation mark `!` indicates a non-null value. These symbols determine whether the list itself and its individual elements are allowed to be `null`.
 
@@ -1153,7 +1149,7 @@ In GraphQL, `[]` defines a list and `!` defines a non-null constraint. `[User]` 
 
 ---
 
-18\. What are Aliases in GraphQL?
+## 18. What are Aliases in GraphQL?
 
 Aliases in GraphQL allow us to rename a field in the response without changing the actual field name in the schema.
 
@@ -1227,7 +1223,7 @@ Interview conclusion: Aliases in GraphQL allow clients to rename fields in the r
 
 ---
 
-19\. What are Fragments in GraphQL?
+## 19. What are Fragments in GraphQL?
 
 Fragments in GraphQL are reusable sets of fields that can be included in multiple queries or mutations. They help avoid repeating the same fields in different operations and make GraphQL queries easier to maintain.
 
@@ -1324,7 +1320,7 @@ Interview conclusion: Fragments in GraphQL are reusable sets of fields that help
 
 ---
 
-20\. What are Named and Anonymous Operations in GraphQL?
+## 20. What are Named and Anonymous Operations in GraphQL?
 
 In GraphQL, operations are requests used to fetch or modify data. An operation can be named or anonymous, depending on whether we provide an operation name in the query.
 
@@ -1401,3 +1397,21 @@ Important rule: An anonymous operation is allowed only when the GraphQL document
 ### Interview conclusion
 
 Named operations have an explicit name, which makes them easier to debug, monitor, and maintain. Anonymous operations do not have a name and are useful for simple queries. GraphQL allows an anonymous operation only when it is the sole operation in the document.
+
+<details>
+<summary>Show Answer</summary>
+
+A GraphQL schema defines the data types, fields, and operations available through an API. It acts as a contract between the client and server.
+
+```graphql
+type User {
+  id: ID!
+  name: String!
+}
+
+type Query {
+  user(id: ID!): User
+}
+```
+
+</details>
