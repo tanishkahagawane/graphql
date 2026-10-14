@@ -20,6 +20,6 @@ This tutorial covers:
 ## Reference
 
 This project is based on the following tutorial:
-[GraphQL Crash Course - GraphQL NodeJS](https://www.youtube.com/watch?v=R9Kz44_y41U)
+[GraphQL Crash Course - GraphQL NodeJS](https://www.youtube.com/watch?v=WtkKwO1viI8)
 
 ---
